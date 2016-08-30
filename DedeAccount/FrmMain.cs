@@ -573,5 +573,15 @@ namespace DedeAccount
         {
             Clipboard.SetDataObject(textBox15.Text);
         }
+
+        private void notifyIcon1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+        }
+
+        private void 关闭ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

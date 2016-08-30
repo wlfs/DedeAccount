@@ -60,7 +60,8 @@
             this.ClientSize = new System.Drawing.Size(447, 261);
             this.Controls.Add(this.btnImport);
             this.Controls.Add(this.txtContent);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmImportSite";
             this.Text = "导入站点";
             this.TopMost = true;
