@@ -54,18 +54,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Category.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmImportSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImportSite.Designer.cs">
+      <DependentUpon>FrmImportSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStrG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStrG.Designer.cs">
+      <DependentUpon>FrmStrG.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.cs" />
     <Compile Include="Util.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImportSite.resx">
+      <DependentUpon>FrmImportSite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStrG.resx">
+      <DependentUpon>FrmStrG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -109,6 +127,9 @@
     <None Include="Resources\添加 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\导入.png" />
+    <None Include="Resources\导入 %281%29.png" />
+    <None Include="Resources\导出.png" />
     <Content Include="www.ico.la_59008dada0f5d149ea2d2d3cd8a539b1_32X32.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

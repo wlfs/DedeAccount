@@ -19,5 +19,6 @@ namespace DedeAccount
         public string Remark { get; set; }
         public string  AdminUrl { get; set; }
         public string  Url { get; set; }
+        public string AdminFolder { get; set; }
     }
 }
