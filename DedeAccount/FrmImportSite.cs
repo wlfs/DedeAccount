@@ -42,7 +42,9 @@ namespace DedeAccount
                         {
                             if (itemCount > 0)
                             {
-                                site.AdminFolder = site.AdminUrl.Substring(site.Url.Length).Trim('/');
+                                if (!string.IsNullOrEmpty(site.Url)&& site.AdminUrl.Length>site.Url.Length&&site.AdminUrl.IndexOf(site.Url)>-1) {
+                                    site.AdminFolder = site.AdminUrl.Substring(site.Url.Length).Trim('/');
+                                }
                             }
                             itemCount = 0;
                             site = new Site();

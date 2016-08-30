@@ -571,7 +571,7 @@ namespace DedeAccount
 
         private void btnCopyAdminFolder(object sender, EventArgs e)
         {
-
+            Clipboard.SetDataObject(textBox15.Text);
         }
     }
 }
